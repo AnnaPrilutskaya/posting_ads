@@ -14,8 +14,6 @@ urlpatterns = [
     path('auth/', include('djoser.urls')),
     # JWT-эндпоинты, для управления JWT-токенами:
     path('auth/', include('djoser.urls.jwt')),
-    #path('articles/', api_articles),
-    #path( 'articles/<int:pk>/', api_articles_detail )
     path('', include(router.urls)),
 ] 
 
